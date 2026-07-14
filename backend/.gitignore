@@ -1,0 +1,4 @@
+# Security Files - DO NOT COMMIT
+createAdmin.js
+.env
+*.log
