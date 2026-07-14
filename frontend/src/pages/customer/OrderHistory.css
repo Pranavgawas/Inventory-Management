@@ -1,0 +1,153 @@
+.order-history {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.order-history h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.order-header h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.order-date {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.status-badge.confirmed,
+.status-badge.processing {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-badge.completed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.cancelled {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--bg);
+  border-radius: 0.5rem;
+}
+
+.item-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.item-qty {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.item-price {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.order-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.order-total .amount {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.processed-by {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.empty-orders {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.empty-orders svg {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.empty-orders h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.empty-orders p {
+  color: var(--text-muted);
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted);
+}
